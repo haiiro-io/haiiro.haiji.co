@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var gh-pages = require('gh-pages');
+var gh_pages = require('gh-pages');
 var path = require('path');
 var dist = path.join(__dirname, '..', 'dist');
 
@@ -12,4 +12,4 @@ var handle_error = function(error) {
 };
 
 
-gh-pages.publish(dist, handle_error);
+gh_pages.publish(dist, handle_error);
