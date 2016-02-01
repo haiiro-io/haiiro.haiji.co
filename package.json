@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "preview": "harp server src",
     "compile": "harp compile src dist",
     "publish": "npm run compile && bin/publish"
   },
