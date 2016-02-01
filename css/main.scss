@@ -1,0 +1,25 @@
+@import 'font-awesome/font-awesome';
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import 'grid';
+
+body {
+  font-family: 'Noto Sans', 'Helvetica';
+  padding: 50px 20px 0;
+  background: #f4f4f7;
+  color: #444;
+  margin: 0;
+}
+
+a {
+  color: #999;
+  &:hover, &:active, &:focus {
+    color: #333;
+  }
+}
+
+h1 {
+  text-align: center;
+  i {
+    margin-right: 5px;
+  }
+}

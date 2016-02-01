@@ -1,0 +1,14 @@
+.grid
+  .grid__col.grid__col--2-of-6.grid__col--centered
+    h1 haiiro.haiji.co
+
+.grid
+  .grid__col.grid__col--2-of-6.grid__col--centered
+    article!= partial('profile')
+
+  .grid__col.grid__col--2-of-6.grid__col--centered
+    .grid
+      each item in public._data.links
+        .grid__col.grid__col--1-of-12
+          a(href= item.link, target= '_blank') 
+            i.fa(class= 'fa-' + item.icon)
