@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "compile": "harp compile src dist",
+    "publish": "npm run compile && bin/publish"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.9.0",
+    "harp": "^0.20.0"
+  }
+}

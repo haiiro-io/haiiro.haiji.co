@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var gh-pages = require('gh-pages');
+var path = require('path');
+var dist = path.join(__dirname, '..', 'dist');
+
+var handle_error = function(error) {
+  if (error) {
+    console.error(error);
+    return process.exit(error.code || 1);
+  }
+};
+
+
+gh-pages.publish(dist, handle_error);
