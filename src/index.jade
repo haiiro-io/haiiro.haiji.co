@@ -1,14 +1,35 @@
-.grid
-  .grid__col.grid__col--2-of-6.grid__col--centered
+.grid#photo
+  .grid__col.grid__col--7-of-12.grid__col--centered
     h1 haiiro.haiji.co
 
-.grid
-  .grid__col.grid__col--2-of-6.grid__col--centered
+.grid#profile
+  .grid__col.grid__col--7-of-12.grid__col--centered
+    #face
+    h2.name 灰色ハイジ
+    h3.occupation Planner, UI/UX Designer
     article!= partial('_shared/profile')
 
-  .grid__col.grid__col--2-of-6.grid__col--centered
+.grid#career
+  .grid__col.grid__col--7-of-12.grid__col--centered
+    .grid
+      each item in public._data.careers
+        .grid__col.grid__col--3-of-12.term(class= item.present ? 'present' : '')
+          = item.term
+        .grid__col.grid__col--9-of-12.content
+          if item.content
+            = item.content
+          else 
+            a(href= item.link, target= '_blank')
+              = item.company
+            | &nbsp;
+            = item.occupation
+.grid#links
+  .grid__col.grid__col--7-of-12.grid__col--centered
+    h2 Contacts
     .grid
       each item in public._data.links
-        .grid__col.grid__col--1-of-12
+        .grid__col.grid__col--4-of-12
           a(href= item.link, target= '_blank') 
-            i.fa(class= 'fa-' + item.icon)
+            .icon-box
+              i.fa(class= 'fa-' + item.icon)
+              = item.name

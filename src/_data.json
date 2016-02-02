@@ -1,29 +1,91 @@
 {
+  "careers": [
+    {
+      "term": "2016 - Present",
+      "content": "フリーランスとして活動",
+      "present": true
+    },
+    {
+      "term": "2016 - Present",
+      "company": "株式会社LiB",
+      "link": "https://www.libinc.co.jp/",
+      "occupation": "UI/UX Designer",
+      "present": true
+    },
+    {
+      "term": "2013 - 2015",
+      "company": "SIX",
+      "link": "http://sixinc.jp/",
+      "occupation": "Interactive Planner & Designer"
+    },
+    {
+      "term": "2012 - 2013",
+      "company": "博報堂",
+      "link": "http://www.hakuhodo.co.jp/",
+      "occupation": "Interactive Planner"
+    },
+    {
+      "term": "2009 - 2015",
+      "company": "博報堂アイ・スタジオ",
+      "link": "http://www.i-studio.co.jp/",
+      "occupation": "Web Designer"
+    },
+    {
+      "term": "2008 - 2009",
+      "company": "はてな",
+      "link": "http://hatenacorp.jp/",
+      "occupation": "Web Deirector & Designer"
+    },
+    {
+      "term": "2005 - 2009",
+      "content": "京都造形芸術大学 芸術学部 情報デザイン学科"
+    }
+  ],
   "links": [
     {
-      "name": "twitter",
+      "name": "Twitter",
       "link": "https://twitter.com/haiji505",
-      "icon": "twitter-square"
+      "icon": "twitter"
     },
     {
       "name": "facebook",
       "link": "https://facebook.com/haiji505",
-      "icon": "facebook-official"
+      "icon": "facebook"
     },
     {
-      "name": "instagram",
+      "name": "Tumblr",
+      "link": "http://haiji505.tumblr.com/",
+      "icon": "tumblr"
+    },
+    {
+      "name": "500px",
+      "link": "http://500px.com/haiji505",
+      "icon": "500px"
+    },
+    {
+      "name": "Instagram",
       "link": "https://instagram.com/haiji505",
       "icon": "instagram"
     },
     {
-      "name": "blog",
-      "link": "http://blog.haiji.co",
-      "icon": "book"
+      "name": "Wishlist (1986/11/10)",
+      "link": "http://www.amazon.co.jp/registry/wishlist/31FH6CO5B6F8W",
+      "icon": "gift"
     },
     {
-      "name": "bookmark",
+      "name": "Blog",
+      "link": "http://blog.haiji.co",
+      "icon": "sticky-note-o"
+    },
+    {
+      "name": "Hatena Bookmark",
       "link": "http://b.hatena.ne.jp/haiji505/bookmark",
-      "icon": "bookmark"
+      "icon": "bookmark-o"
+    },
+    {
+      "name": "haiiro@haiji.co",
+      "link": "mailto:haiiro@haiji.co",
+      "icon": "envelope-o"
     }
   ]
  }

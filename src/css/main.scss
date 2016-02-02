@@ -1,17 +1,22 @@
 @import 'font-awesome/font-awesome';
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
+$toast-gutter-width: 10px;
 @import 'grid';
 
+$background-dark: #e4e4e4;
+$background-light: #f1f1f1;
+
 body {
-  font-family: 'Noto Sans', 'Helvetica';
-  padding: 50px 20px 0;
-  background: #f4f4f7;
+  font-family: 'Quicksand', '游ゴシック', 'YuGothic', sans-serif;
+  font-size: 16px;
   color: #444;
   margin: 0;
 }
 
 a {
   color: #999;
+  text-decoration: none;
   &:hover, &:active, &:focus {
     color: #333;
   }
@@ -21,5 +26,103 @@ h1 {
   text-align: center;
   i {
     margin-right: 5px;
+  }
+}
+
+#photo {
+  height: 480px;
+}
+
+#profile {
+  background-color: $background-dark;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  #face {
+    margin: -70px auto 0 auto;
+    width: 120px;
+    height: 120px;
+    background-image: url('/images/face.jpg');
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    border: 2px solid #fff;
+    border-radius: 75px;
+  }
+  h2.name {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #696969;
+    text-align: center;
+  }
+  h3.occupation {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #6b6b6b;
+    text-align: center;
+  }
+  article {
+    margin-top: 30px;
+  }
+}
+
+#career {
+  color: #6b6b6b;
+  background-color: $background-light;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  .term {
+    font-size: 12px;
+    &.present {
+      color: #e0559f;
+    }
+    margin-top: 20px;
+  }
+  .content {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  a {
+    text-decoration: underline;
+    &:hover, &:active, &:focus {
+      color: #000;
+    }
+  }
+}
+
+#links {
+  background-color: $background-dark;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  h2 {
+    font-size: 20px;
+    color: #d1d1d1;
+  }
+  a {
+    color: #bfbfbf;
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+      color: #bfbfbf;
+    }
+    & > .icon-box {
+      height: 20px;
+      margin-top: 8px;
+      padding: 5px 10px;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 20px;
+      background-color: $background-light;
+      i {
+        font-size: 16px;
+        margin-right: 6px;
+        vertical-align: middle;
+      }
+      &:hover {
+        background-color: #dedede;
+      }
+    }
   }
 }
