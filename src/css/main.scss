@@ -33,18 +33,31 @@ h1 {
   }
 }
 
+img#haiiro-icon {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 120px;
+  height: 120px;
+  opacity: 0.5;
+  &:hover, &:active, &:focus {
+    opacity: 0.8;
+  }
+}
+
 #photo {
   height: 600px;
   background-color: #999;
-  img#haiiro-icon {
-    margin-top: 40px;
-    margin-left: 40px;
-    width: 120px;
-    height: 120px;
-    opacity: 0.5;
-    &:hover {
-      opacity: 0.8;
-    }
+  position: relative;
+  z-index: -1;
+  p.photographer {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    display: block;
+    right: 15px;
+    margin-left: auto;
+    vertical-align: bottom;
   }
 }
 
