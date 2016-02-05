@@ -6,7 +6,7 @@ $background-light: #f1f1f1;
 $text-selection-color: #d5d5d5;
 
 body {
-  font-family: 'Quicksand', '游ゴシック', 'YuGothic', sans-serif;
+  font-family: 'Quicksand', '游ゴシック体 ミディアム', 'YuGothic Medium', sans-serif;
   font-size: 16px;
   color: #444;
   margin: 0;
@@ -120,23 +120,34 @@ img#haiiro-icon {
   color: #6b6b6b;
   background-color: $background-light;
   font-size: 14px;
-  padding-top: 10px;
-  padding-bottom: 60px;
-  .term {
-    font-size: 12px;
-    &.present {
-      color: #e0559f;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  .career-box {
+    height: 60px;
+    .term {
+      font-size: 12px;
+      &.present {
+        color: #e0559f;
+      }
     }
-    margin-top: 20px;
+    .content {
+      font-size: 16px;
+      vertical-align: baseline;
+      a {
+        text-decoration: underline;
+        &:hover, &:active, &:focus {
+          color: #000;
+        }
+      }
+    }
   }
-  .content {
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  a {
-    text-decoration: underline;
-    &:hover, &:active, &:focus {
-      color: #000;
+}
+
+@media screen and (min-width: 48em) {
+  #career {
+    .career-box {
+      height: 50px;
+      line-height: 50px;
     }
   }
 }
