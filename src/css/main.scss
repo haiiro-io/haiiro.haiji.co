@@ -1,9 +1,6 @@
 @import 'font-awesome/font-awesome';
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
 
-$toast-gutter-width: 10px;
-@import 'grid';
-
 $background-dark: #e4e4e4;
 $background-light: #f1f1f1;
 $text-selection-color: #d5d5d5;
@@ -129,27 +126,29 @@ img#haiiro-icon {
     font-size: 20px;
     color: #d1d1d1;
   }
-  a {
-    color: #bfbfbf;
-    text-decoration: none;
-    &:hover, &:active, &:focus {
+  .link-box {
+    padding: 0.25em 0.5em 0.25em 0;
+    a {
       color: #bfbfbf;
-    }
-    & > .icon-box {
-      height: 20px;
-      margin-top: 8px;
-      padding: 5px 10px;
-      font-size: 10px;
-      font-weight: 700;
-      line-height: 20px;
-      background-color: $background-light;
-      i {
-        font-size: 16px;
-        margin-right: 6px;
-        vertical-align: middle;
+      text-decoration: none;
+      &:hover, &:active, &:focus {
+        color: #bfbfbf;
       }
-      &:hover {
-        background-color: #dedede;
+      & > .icon-box {
+        height: 20px;
+        padding: 5px 10px;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 20px;
+        background-color: $background-light;
+        i {
+          font-size: 16px;
+          margin-right: 6px;
+          vertical-align: middle;
+        }
+        &:hover {
+          background-color: #dedede;
+        }
       }
     }
   }
