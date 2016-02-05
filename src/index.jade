@@ -3,20 +3,20 @@ img#haiiro-icon(src= '/images/haiiro.png')
   p.photographer Photo by Kengo Hamasaki
 
 #profile
-  .g-wide-5-24.g-min-1-8
-  .g-wide-14-24.g-min-3-4
+  .g-wide-5-24.g-1-24
+  .g-wide-14-24.g-11-12
     #face
     h2.name 灰色ハイジ
     h3.occupation Planner, UI/UX Designer
     article!= partial('_shared/profile')
 
 #career
-  .g-wide-5-24.g-min-1-8
-  .g-wide-14-24.g-min-3-4
+  .g-wide-5-24.g-1-24
+  .g-wide-14-24.g-11-12
     each item in public._data.careers
-      .g-wide-1-4.g-min-1-1.term(class= item.present ? 'present' : '')
+      .g-wide-1-4.g-1-1.term(class= item.present ? 'present' : '')
         = item.term
-      .g-wide-3-4.g-min-1-1.content
+      .g-wide-3-4.g-1-1.content
         if item.content
           = item.content
         else 
@@ -25,11 +25,11 @@ img#haiiro-icon(src= '/images/haiiro.png')
           | &nbsp;
           = item.occupation
 #links
-  .g-wide-5-24.g-min-1-8
-  .g-wide-14-24.g-min-3-4
+  .g-wide-5-24.g-1-24
+  .g-wide-14-24.g-11-12
     h2 Identifications of @haiji505
     each item in public._data.links
-      .g-wide-1-3.g-min-1-1
+      .g-wide-1-3.g-1-1
         .link-box
           a(href= item.link, target= '_blank')
             .icon-box

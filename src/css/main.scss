@@ -32,13 +32,22 @@ h1 {
 
 img#haiiro-icon {
   position: absolute;
-  top: 40px;
-  left: 40px;
-  width: 120px;
-  height: 120px;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
   opacity: 0.5;
   &:hover, &:active, &:focus {
     opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  img#haiiro-icon {
+    top: 40px;
+    left: 40px;
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -49,12 +58,24 @@ img#haiiro-icon {
   z-index: -1;
   p.photographer {
     position: absolute;
-    bottom: 0;
+    font-size: 0.8em;
+    top: 0;
+    right: 0.8em;
     color: #fff;
     display: block;
-    right: 15px;
     margin-left: auto;
-    vertical-align: bottom;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #photo {
+    p.photographer {
+      top: auto;
+      bottom: 0;
+      right: 1.0em;
+      font-size: 1.0em;
+      vertical-align: bottom;
+    }
   }
 }
 
