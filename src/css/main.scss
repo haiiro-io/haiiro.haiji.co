@@ -36,6 +36,9 @@ img#haiiro-icon {
   left: 20px;
   width: 80px;
   height: 80px;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
   opacity: 0.5;
   &:hover, &:active, &:focus {
     opacity: 0.8;
