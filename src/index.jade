@@ -1,6 +1,13 @@
 img#haiiro-icon(src= '/images/haiiro.png')
 #photo
-  p.photographer Photo by Kengo Hamasaki
+  p#photographer Photo by&nbsp;
+
+- var photographers = public._data.photographers;
+script.
+  var photographers = "#{photographers}".split(",");
+  var index = Math.floor(Math.random() * photographers.length + 1);
+  document.getElementById('photo').className = 'photo-index-' + index;
+  document.getElementById('photographer').innerText += photographers[index - 1];
 
 #profile
   .g-wide-5-24.g-1-24

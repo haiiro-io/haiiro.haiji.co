@@ -57,9 +57,11 @@ img#haiiro-icon {
 #photo {
   height: 400px;
   background-color: #999;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   z-index: -1;
-  p.photographer {
+  p#photographer {
     position: absolute;
     font-size: 0.75em;
     top: 0;
@@ -73,7 +75,7 @@ img#haiiro-icon {
 @media screen and (min-width: 48em) {
   #photo {
     height: 600px;
-    p.photographer {
+    p#photographer {
       top: auto;
       bottom: 0;
       right: 0.8em;
@@ -81,6 +83,15 @@ img#haiiro-icon {
       vertical-align: bottom;
     }
   }
+}
+
+$i: 2;
+@while $i > 0 {
+  #photo.photo-index-#{$i} { background-image: url(/images/cover_#{$i}_cropped.jpg); }
+  @media screen and (min-width: 48em) {
+    #photo.photo-index-#{$i} { background-image: url(/images/cover_#{$i}.jpg); }
+  }
+  $i: $i - 1;
 }
 
 #profile {
