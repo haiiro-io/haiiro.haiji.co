@@ -1,6 +1,7 @@
 @import 'font-awesome/font-awesome';
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
 
+$photo-numbers: 2;
 $background-dark: #e4e4e4;
 $background-light: #f1f1f1;
 $text-selection-color: #d5d5d5;
@@ -100,7 +101,7 @@ img#haiiro-icon {
   }
 }
 
-$i: 2;
+$i: $photo-numbers;
 @while $i > 0 {
   #photo.photo-index-#{$i} { background-image: url(/images/cover_#{$i}_cropped.jpg); }
   @media screen and (min-width: 48em) {
