@@ -61,6 +61,11 @@ img#haiiro-icon {
   background-repeat: no-repeat;
   position: relative;
   z-index: -1;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
   p#photographer {
     position: absolute;
     font-size: 0.75em;
@@ -70,6 +75,16 @@ img#haiiro-icon {
     display: block;
     margin-left: auto;
   }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @media screen and (min-width: 48em) {
