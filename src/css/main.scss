@@ -103,9 +103,9 @@ img#haiiro-icon {
 
 $i: $photo-numbers;
 @while $i > 0 {
-  #photo.photo-index-#{$i} { background-image: url(/images/cover_#{$i}_cropped.jpg); }
+  #photo.photo-index-#{$i} { background-image: url(/images/covers/cover_#{$i}_cropped.jpg); }
   @media screen and (min-width: 48em) {
-    #photo.photo-index-#{$i} { background-image: url(/images/cover_#{$i}.jpg); }
+    #photo.photo-index-#{$i} { background-image: url(/images/covers/cover_#{$i}.jpg); }
   }
   $i: $i - 1;
 }
