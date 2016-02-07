@@ -1,7 +1,7 @@
 doctype
 html
   head
-    title= public._data.ogp["og:title"]
+    title= public._data.meta.title
     meta(name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
     link(rel="stylesheet" href="/css/main.css")
     link(rel="stylesheet" href="/css/grid.css")
@@ -25,6 +25,12 @@ html
     meta(name="msapplication-TileColor" content="#ffffff")
     meta(name="msapplication-TileImage" content="/images/icons/mstile-144x144.png")
     meta(name="theme-color" content="#c1c1c1")
+
+    meta(name="description" content= public._data.meta.short_description)
+    meta(name="author" content= public._data.meta.copyright)
+    meta(name="robots" content="index, follow")
+
+    link(rel="author" href="https://plus.google.com/+HaijiHaiiro")
 
     each val, index in public._data.ogp
       meta(property= index content= val.startsWith("meta.") ? public._data.meta[val.split(".")[1]] : val )
