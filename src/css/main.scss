@@ -11,10 +11,11 @@ body {
   color: #444;
   font-family: 'Quicksand', '游ゴシック体 ミディアム', 'YuGothic Medium', sans-serif;
   font-size: 16px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  ::-moz-selection { background: $text-selection-color; }
+  ::selection { background: $text-selection-color; }
 }
-
-::-moz-selection { background: $text-selection-color; }
-::selection { background: $text-selection-color; }
 
 a {
   color: #999;
