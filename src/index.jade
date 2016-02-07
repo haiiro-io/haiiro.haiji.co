@@ -13,9 +13,9 @@ script.
   .g-wide-5-24.g-1-24
   .g-wide-14-24.g-11-12
     #face
-    h2.name= public._data.ogp['og:title']
-    h3.occupation Planner, UI/UX Designer
-    article!= public._data.ogp['og:description']
+    h2.name= public._data.meta.title
+    h3.occupation= public._data.meta.occupation
+    article!= public._data.meta.description
 
 #career
   .g-wide-5-24.g-1-24
@@ -51,7 +51,8 @@ script.
     p#copyright
       | &copy;&nbsp;
       = new Date().getYear() + 1900
-      | &nbsp;Haiji Haiiro.
+      | &nbsp;
+      = public._data.meta.copyright
       //
         br/
         | second line

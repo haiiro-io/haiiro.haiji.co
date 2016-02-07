@@ -27,15 +27,11 @@ html
     meta(name="theme-color" content="#c1c1c1")
 
     each val, index in public._data.ogp
-      meta(property= index content= val)
+      meta(property= index content= val.startsWith("meta.") ? public._data.meta[val.split(".")[1]] : val )
     meta(property="og:updated_time" content= new Date().toISOString())
 
-    meta(name="twitter:card" content="summary_large_image")
-    meta(name="twitter:site" content="@haiji505")
-    meta(name="twitter:creator" content="@haiji505")
-    meta(name="twitter:title" content="灰色ハイジ")
-    meta(name="twitter:description" content="制作会社でWebデザイナーを経験後、クリエイティブエージェンシーSIXでプランナーに転身。2015年に独立。デジタル施策の企画を中心に、デザインなどを手がける。主な仕事に祭 with android、AmazarashiのMV内のUIデザインなど。不定期に日テレSENSORSでインタビュアーなども務める。")
-    meta(name="twitter:image" content="http://haiiro.haiji.co/images/ogp_1200x630.jpg")
+    each val, index in public._data.twitter
+      meta(property= index content= val.startsWith("meta.") ? public._data.meta[val.split(".")[1]] : val )
 
   body
     != yield

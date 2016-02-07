@@ -1,11 +1,13 @@
 {
-  "ogp": {
-      "og:url": "http://haiiro.haiji.co/",
-      "og:type": "profile",
-      "og:title": "灰色ハイジ",
-      "og:description": "制作会社でWebデザイナーを経験後、クリエイティブエージェンシーSIXでプランナーに転身。2015年に独立。デジタル施策の企画を中心に、デザインなどを手がける。主な仕事に祭 with android、AmazarashiのMV内のUIデザインなど。不定期に日テレSENSORSでインタビュアーなども務める。",
-      "og:image": "http://haiiro.haiji.co/images/ogp_1200x630.jpg",
-      "og:image:type": "image/jpeg"
+  "meta": {
+    "url": "http://haiiro.haiji.co/",
+    "title": "灰色ハイジ",
+    "twitter": "@haiji505",
+    "occupation": "Planner, UI/UX Designer",
+    "short_description": "フリーランスのPlanner, UI/UX Designer。デジタル施策の企画を中心に、デザインなどを手がける。主な仕事に祭 with android、AmazarashiのMV内のUIデザインなど。不定期に日テレSENSORSでインタビュアーなども務める。",
+    "description": "制作会社でWebデザイナーを経験後、クリエイティブエージェンシーSIXでプランナーに転身。2015年に独立。デジタル施策の企画を中心に、デザインなどを手がける。主な仕事に祭 with android、AmazarashiのMV内のUIデザインなど。不定期に日テレSENSORSでインタビュアーなども務める。",
+    "image_url": "http://haiiro.haiji.co/images/ogp_1200x630.jpg",
+    "copyright": "Haiji Haiiro"
   },
   "photographers": [
     "Kengo Hamasaki",
@@ -99,5 +101,21 @@
       "link": "mailto:haiiro@haiji.co",
       "icon": "envelope-o"
     }
-  ]
+  ],
+  "ogp": {
+    "og:url": "meta.url",
+    "og:type": "profile",
+    "og:title": "meta.title",
+    "og:description": "meta.short_description",
+    "og:image": "meta.image_url",
+    "og:image:type": "image/jpeg"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "meta.twitter",
+    "twitter:creator": "meta.twitter",
+    "twitter:title": "meta.title",
+    "twitter:description": "meta.short_description",
+    "twitter:image": "meta.image_url"
+  }
  }
