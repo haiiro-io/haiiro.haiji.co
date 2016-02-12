@@ -1,16 +1,18 @@
 @import 'font-awesome/font-awesome';
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+@import 'mixins';
 
 $photo-numbers: 2;
 $background-dark: #e4e4e4;
 $background-light: #f1f1f1;
 $text-selection-color: #d5d5d5;
+$base-font-size: 16px;
 
 body {
   margin: 0;
   color: #444;
   font-family: 'Quicksand', '游ゴシック体 ミディアム', 'YuGothic Medium', sans-serif;
-  font-size: 16px;
+  font-size: $base-font-size;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
   ::-moz-selection { background: $text-selection-color; }
@@ -36,15 +38,10 @@ img#haiiro-icon {
   left: 15px;
   width: 55px;
   height: 55px;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
   opacity: 0.5;
+  @include transition(opacity, .5s, ease-in-out);
   &:hover, &:active, &:focus { opacity: 0.8; }
-}
-
-@media screen and (min-width: 48em) {
-  img#haiiro-icon {
+  @include for-wide-screen {
     top: 40px;
     left: 40px;
     width: 120px;
@@ -59,8 +56,10 @@ img#haiiro-icon {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  animation: fadein 2s;
-  -webkit-animation: fadein 2s;
+  @include fadein(2s);
+  @include for-wide-screen {
+    height: 600px;
+  }
   p#photographer {
     display: block;
     position: absolute;
@@ -69,23 +68,7 @@ img#haiiro-icon {
     margin-left: auto;
     color: #fff;
     font-size: 0.75em;
-  }
-}
-
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@media screen and (min-width: 48em) {
-  #photo {
-    height: 600px;
-    p#photographer {
+    @include for-wide-screen {
       vertical-align: bottom;
       top: auto;
       bottom: 0;
@@ -93,15 +76,16 @@ img#haiiro-icon {
       font-size: 0.8em;
     }
   }
-}
-
-$i: $photo-numbers;
-@while $i > 0 {
-  #photo.photo-index-#{$i} { background-image: url(/images/covers/cover_#{$i}_cropped.jpg); }
-  @media screen and (min-width: 48em) {
-    #photo.photo-index-#{$i} { background-image: url(/images/covers/cover_#{$i}.jpg); }
+  $i: $photo-numbers;
+  @while $i > 0 {
+    &.photo-index-#{$i} {
+      background-image: url(/images/covers/cover_#{$i}_cropped.jpg);
+      @include for-wide-screen {
+        background-image: url(/images/covers/cover_#{$i}.jpg);
+      }
+    }
+    $i: $i - 1;
   }
-  $i: $i - 1;
 }
 
 #profile {
@@ -131,7 +115,7 @@ $i: $photo-numbers;
     margin-top: 5px;
     margin-bottom: 5px;
     color: #6b6b6b;
-    font-size: 16px;
+    font-size: $base-font-size;
     font-weight: 300;
     text-align: center;
   }
@@ -149,6 +133,10 @@ $i: $photo-numbers;
   font-size: 14px;
   .career-box {
     height: 60px;
+    @include for-wide-screen {
+      height: 50px;
+      line-height: 50px;
+    }
     .term {
       font-size: 12px;
       &.present {
@@ -156,21 +144,12 @@ $i: $photo-numbers;
       }
     }
     .content {
-      font-size: 16px;
+      font-size: $base-font-size;
       vertical-align: baseline;
       a {
         text-decoration: underline;
         &:hover, &:active, &:focus { color: #000; }
       }
-    }
-  }
-}
-
-@media screen and (min-width: 48em) {
-  #career {
-    .career-box {
-      height: 50px;
-      line-height: 50px;
     }
   }
 }
@@ -188,7 +167,6 @@ $i: $photo-numbers;
     a {
       color: #bfbfbf;
       text-decoration: none;
-      &:hover, &:active, &:focus { color: #bfbfbf; }
       & > .icon-box {
         height: 20px;
         padding: 12px 0 12px 10px;
@@ -197,7 +175,7 @@ $i: $photo-numbers;
         i {
           width: 1.0em;
           margin-right: 5px;
-          font-size: 16px;
+          font-size: $base-font-size;
           vertical-align: middle;
         }
         span.link-name {
