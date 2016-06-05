@@ -55,7 +55,7 @@
       "content": "京都造形芸術大学 芸術学部 情報デザイン学科"
     }
   ],
-  "medium": [
+  "media": [
     {
       "data": "2016/04/01",
       "title": "雑誌ブレーン5月号「今月のブックマーク」寄稿"
@@ -82,22 +82,22 @@
   ],
   "interview": [
     {
-      "media": "GINZA",
+      "medium": "GINZA",
       "title": "おしゃれでギークな彼女たち",
       "link": "https://twitter.com/haiji505/status/720772647060004864"
     },
     {
-      "media": "DiFa",
+      "medium": "DiFa",
       "title": "デジタルファッショニスタを追え☆灰色ハイジさん",
       "link": "http://www.difa.me/people/haijihaiiro-digitalfashionista"
     },
     {
-      "media": "G-side",
+      "medium": "G-side",
       "title": "灰色ハイジさんの「インタラクティブデザイン」の世界",
       "link": "http://blossomlink.me/g-side/4"
     },
     {
-      "media": "CAREER HACK",
+      "medium": "CAREER HACK",
       "title": "教えてHACK GIRL！ 灰色ハイジ流 クリエイター女子のワーク・ライフスタイル。",
       "link": "http://careerhack.en-japan.com/report/detail/73"
     }
