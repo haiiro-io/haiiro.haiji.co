@@ -32,6 +32,35 @@ h1 {
   }
 }
 
+.button-open {
+  margin: 20px auto 0 auto;
+  text-align: center;
+
+  a {
+    display: block;
+    background-color: $background-light;
+    margin: 0 auto;
+    padding: 0.5em;
+    border-radius: 6px;
+    border: 3px solid #dedede;
+    color: #bfbfbf;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+
+    @include for-wide-screen {
+      max-width: 12em;
+    }
+
+    i {
+      width: 1.0em;
+      margin-right: 10px;
+      font-size: $base-font-size;
+    }
+    &:hover { background-color: #dedede; }
+  }
+}
+
 img#haiiro-icon {
   position: absolute;
   top: 15px;
@@ -146,6 +175,42 @@ img#haiiro-icon {
     .content {
       font-size: $base-font-size;
       vertical-align: baseline;
+      a {
+        text-decoration: underline;
+        &:hover, &:active, &:focus { color: #000; }
+      }
+    }
+  }
+}
+
+.exposure {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: $background-dark;
+  color: #6b6b6b;
+  font-size: 14px;
+  &#interview {
+    background-color: $background-light;
+  }
+  h2 {
+    color: #d1d1d1;
+    font-size: 20px;
+  }
+  .media-box {
+    padding: 15px 0 15px;
+    @include for-wide-screen {
+      padding: 10px 0 10px;
+    }
+    .data {
+      font-size: 12px;
+    }
+    .medium {
+      font-size: 12px;
+    }
+    .content {
+      font-size: 14px;
+      line-height: 1.2em;
+      vertical-align: text-top;
       a {
         text-decoration: underline;
         &:hover, &:active, &:focus { color: #000; }

@@ -1,4 +1,5 @@
-img#haiiro-icon(src= '/images/haiiro.png')
+a(href= 'http://haiji.co/', target= '_blank')
+  img#haiiro-icon(src= '/images/haiiro.png')
 #photo
   p#photographer Photo by&nbsp;
 
@@ -16,6 +17,10 @@ script.
     h2.name= public._data.meta.title
     h3.occupation= public._data.meta.occupation
     article!= public._data.meta.description
+    .button-open
+      a(href= 'http://haiji.co/', target= '_blank')
+        i.fa.fa-file-image-o
+        | Portfolio
 
 #career
   .g-wide-5-24.g-1-24
@@ -32,6 +37,36 @@ script.
               = item.company
             | &nbsp;
             = item.occupation
+
+.exposure
+  .g-wide-5-24.g-1-24
+  .g-wide-14-24.g-11-12
+    h2 Media
+    each item in public._data.media
+      .media-box
+        .g-wide-1-4.g-1-1.data
+          = item.data
+        .g-wide-3-4.g-1-1.content
+          if item.link
+            a(href= item.link, target= '_blank')
+              = item.title
+          else
+            = item.title
+
+.exposure#interview
+  .g-wide-5-24.g-1-24
+  .g-wide-14-24.g-11-12
+    h2 Interview
+    each item in public._data.interview
+      .media-box
+        .g-wide-1-4.g-1-1.medium
+          = item.medium
+        .g-wide-3-4.g-1-1.content
+          if item.link
+            a(href= item.link, target= '_blank')
+              = item.title
+          else
+            = item.title
 
 #links
   .g-wide-5-24.g-1-24
