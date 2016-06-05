@@ -55,6 +55,53 @@
       "content": "京都造形芸術大学 芸術学部 情報デザイン学科"
     }
   ],
+  "media": [
+    {
+      "data": "2016/04/01",
+      "title": "雑誌ブレーン5月号「今月のブックマーク」寄稿"
+    },
+    {
+      "data": "2016/02/22",
+      "title": "デザインを変えられるイヤーアクセサリー「VIEWS」を触ってみた",
+      "link": "http://www.difa.me/style/views-review"
+    },
+    {
+      "data": "2015/10/02",
+      "title": "日テレ SENSORS 10/4（日）2:25～放送 「Todays Art」インタビュアー",
+      "link": "http://www.sensors.jp/post/sensors_104235.html"
+    },
+    {
+      "data": "2014/12/16",
+      "title": "日テレ SENSORS 第3回SENSORS SALON",
+      "link": "http://www.sensors.jp/post/201415.html"
+    },
+    {
+      "data": "2013/04/11",
+      "title": "雑誌Hanako「みんなのデジタルライフ特集」寄稿"
+    }
+  ],
+  "interview": [
+    {
+      "media": "GINZA",
+      "title": "おしゃれでギークな彼女たち",
+      "link": "https://twitter.com/haiji505/status/720772647060004864"
+    },
+    {
+      "media": "DiFa",
+      "title": "デジタルファッショニスタを追え☆灰色ハイジさん",
+      "link": "http://www.difa.me/people/haijihaiiro-digitalfashionista"
+    },
+    {
+      "media": "G-side",
+      "title": "灰色ハイジさんの「インタラクティブデザイン」の世界",
+      "link": "http://blossomlink.me/g-side/4"
+    },
+    {
+      "media": "CAREER HACK",
+      "title": "教えてHACK GIRL！ 灰色ハイジ流 クリエイター女子のワーク・ライフスタイル。",
+      "link": "http://careerhack.en-japan.com/report/detail/73"
+    }
+  ],
   "links": [
     {
       "name": "Twitter",

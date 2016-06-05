@@ -154,6 +154,42 @@ img#haiiro-icon {
   }
 }
 
+#media {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: $background-dark;
+  color: #6b6b6b;
+  font-size: 14px;
+  &.interview {
+    background-color: $background-light;
+  }
+  h2 {
+    color: #d1d1d1;
+    font-size: 20px;
+  }
+  .media-box {
+    padding: 15px 0 15px;
+    @include for-wide-screen {
+      padding: 10px 0 10px;
+    }
+    .data {
+      font-size: 12px;
+    }
+    .media {
+      font-size: 12px;
+    }
+    .content {
+      font-size: 14px;
+      line-height: 1.2em;
+      vertical-align: text-top;
+      a {
+        text-decoration: underline;
+        &:hover, &:active, &:focus { color: #000; }
+      }
+    }
+  }
+}
+
 #links {
   padding-top: 10px;
   padding-bottom: 10px;
