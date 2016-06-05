@@ -33,8 +33,9 @@ h1 {
 }
 
 .button-open {
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   text-align: center;
+
   a {
     display: block;
     background-color: $background-light;
@@ -47,11 +48,14 @@ h1 {
     text-align: center;
     font-weight: 700;
 
+    @include for-wide-screen {
+      max-width: 12em;
+    }
+
     i {
       width: 1.0em;
       margin-right: 10px;
       font-size: $base-font-size;
-      vertical-align: middle;
     }
     &:hover { background-color: #dedede; }
   }
@@ -179,7 +183,7 @@ img#haiiro-icon {
   }
 }
 
-#media {
+#medium {
   padding-top: 10px;
   padding-bottom: 20px;
   background-color: $background-dark;
