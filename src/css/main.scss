@@ -32,6 +32,31 @@ h1 {
   }
 }
 
+.button-open {
+  margin-top: 20px;
+  text-align: center;
+  a {
+    display: block;
+    background-color: $background-light;
+    margin: 0 auto;
+    padding: 0.5em;
+    border-radius: 6px;
+    border: 3px solid #dedede;
+    color: #bfbfbf;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+
+    i {
+      width: 1.0em;
+      margin-right: 10px;
+      font-size: $base-font-size;
+      vertical-align: middle;
+    }
+    &:hover { background-color: #dedede; }
+  }
+}
+
 img#haiiro-icon {
   position: absolute;
   top: 15px;
