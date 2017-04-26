@@ -14,16 +14,16 @@
   ],
   "careers": [
     {
-      "term": "2016 - Present",
-      "company": "LiB",
-      "link": "https://www.libinc.co.jp/",
-      "occupation": "UI/UX Designer",
-      "present": true
-    },
-    {
       "term": "2015 - Present",
       "content": "フリーランスとして活動",
       "present": true
+    },
+    {
+      "term": "2016 - 2017",
+      "company": "LiB",
+      "link": "https://www.libinc.co.jp/",
+      "occupation": "UI/UX Designer",
+      "present": false
     },
     {
       "term": "2013 - 2015",
