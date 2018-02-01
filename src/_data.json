@@ -3,9 +3,9 @@
     "url": "http://haiiro.haiji.co/",
     "title": "灰色ハイジ",
     "twitter": "@haiji505",
-    "occupation": "Planner, UI/UX Designer",
-    "short_description": "フリーランスのPlanner, UI/UX Designer。デジタル施策の企画を中心に、デザインなどを手がける。主な仕事に祭 with android、AmazarashiのMV内のUIデザインなど。不定期に日テレSENSORSでインタビュアーなども務める。",
-    "description": "制作会社でWebデザイナーを経験後、クリエイティブエージェンシーSIXでプランナーに転身。2015年に独立。デジタル施策の企画を中心に、デザインなどを手がける。主な仕事にPokémon GOのTrailer、祭 with android、AmazarashiのMV内のUIデザインなど。",
+    "occupation": "Digital Product Designer",
+    "short_description": "サンフランシスコ在住のデザイナー",
+    "description": "サンフランシスコ在住。制作会社でWebデザイナーを経験後、クリエイティブエージェンシーSIXでプランナーに転身。2015年に独立。デジタル施策の企画を中心に、デザインなどを手がける。主な仕事にPokémon GOのTrailer、AmazarashiのMV内のUIデザインなど。",
     "image_url": "http://haiiro.haiji.co/images/ogp_1200x630.jpg",
     "copyright": "Haiji Haiiro"
   },
@@ -14,9 +14,16 @@
   ],
   "careers": [
     {
-      "term": "2015 - Present",
-      "content": "フリーランスとして活動",
+      "term": "2017 - Present",
+      "company": "Tradecraft",
+      "link": "http://tradecraft.com/",
+      "occupation": "Product Designer",
       "present": true
+    },
+    {
+      "term": "2015 - 2017",
+      "content": "フリーランスとして活動",
+      "present": false
     },
     {
       "term": "2016 - 2017",
